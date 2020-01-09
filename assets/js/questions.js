@@ -1,0 +1,106 @@
+var quizType = ["HTML", "CSS", "JavaScript"];
+
+var questionArray = [
+
+// HTML Questions
+[
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	}
+],
+
+// CSS Questions
+[
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	}
+],
+
+// JavaScript Questions
+[
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	},
+	{
+		title:
+		choices:
+		answer:
+	}
+]
+];
