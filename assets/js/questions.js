@@ -1,4 +1,4 @@
-var questionArray = [
+let questionArray = [
 	// HTML Questions
 	{
 		title: "What does the <h1> element in HTML define?",
