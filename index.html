@@ -1,43 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Code Quiz</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">    
+        <link rel="stylesheet" href="app.css">
     </head>
-<body>
-    <header>
-        <div class="wrapper">
-            <nav class="navbar navbar-light bg-light">
-              <a class="navbar-brand" id="highScores" href="html/highscore.html">View Highscores</a>
-              <span class="navbar-text" id="timer">
-              </span>
-            </nav>
-        </div>
-    </header>
-    <main>
+    <body>
         <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h1>Coding Quiz Challenge</h1>
-                    <p>Try to answer the following code-related questions within the time limit. Kepp in mind that incorrect answers will penalize your score time by ten seconds!</p>
-                    <button type="button" class="btn btn-primary" id="start">Start Quiz</button>
-                    <div>
-                        <p class="placeHolder"></p>
-                    </div>
-                    <div class="quizContent">
-                        <h2 id="questionTitle"></h2>
-                            <ul class="choices">
-                                
-                            </ul>
-                    </div>
-                </div>
+            <div id="home" class="flex-center flex-column">
+                <h1>Code Quiz</h1>
+                <a class="btn" href="game.html">Play</a>
+                <a class="btn" href="end.html">High Scores</a>
             </div>
-        </div>        
-    </main>
-    <script src="assets/js/questions.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+        </div>
+    </body>
+</html>
