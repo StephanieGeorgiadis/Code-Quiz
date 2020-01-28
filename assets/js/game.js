@@ -3,6 +3,7 @@ var choices = Array.from(document.getElementsByClassName("choice-text"));
 var progressText = document.getElementById("progressText");
 var scoreText = document.getElementById("score");
 var progressBarFull = document.getElementById("progressBarFull");
+var timeEl = document.querySelector("#time");
 
 var currentQuestion = {};
 var acceptingAnswers = false;
@@ -18,7 +19,23 @@ function startGame() {
     score = 0;
     availableQuestions = [...questions];
     console.log(availableQuestions);
+    setTime();
     getNewQuestion();
+};
+
+function setTime() {
+    secondsLeft = availableQuestions.length * 15;
+    console.log(secondsLeft);
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timeEl.textContent = secondsLeft;
+  
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+        alert("Times Up!");
+      } 
+  
+    }, 1000);
 };
 
 function getNewQuestion() {
@@ -59,13 +76,16 @@ choices.forEach(function(choice) {
             if (classToApply === 'correct') {
                 incrementScore(CORRECT_BONUS);
             }
+            if (classToApply === 'incorrect') {
+                secondsLeft = secondsLeft - 10;
+            }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(function() {
             selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
-        },500);
+        }, 200);
     });
 });
 
